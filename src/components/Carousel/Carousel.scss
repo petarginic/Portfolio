@@ -1,0 +1,131 @@
+@import "../../Styles/components/index";
+@import "../../Styles/style.scss";
+
+.slider {
+
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:$CarouselBackgroundColor;
+  background-image:$CarouselBackgroundImage;
+  
+  
+
+
+  .image {
+
+
+    border-radius: 15px;
+    height: 700px;
+
+  }
+
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .slide {
+
+    opacity: 0;
+    transition-duration: 1s ease;
+    
+
+    img {
+
+      width: 85vw;
+    }
+
+    .carousel-content {
+      
+      .text1 {
+        font-size: 3rem;
+        color:white;
+        position: absolute;
+        top:75%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+        opacity: 0.5;
+        animation-name: example1;
+        animation-duration: 4s;
+
+  
+      }
+
+      .text2 {
+
+        font-size: 3rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+        color:white;
+        position: absolute;
+        bottom:10%;
+        left:50%;
+        transform: translate(-50%, -50%);     
+        animation-name: example2;
+        animation-duration: 1s;
+      }
+
+
+
+
+      @keyframes example1 {
+        0%   {color:$CarouselBackgroundImage; left:50%; top:0px;}
+        100% { color:#ff1c00;left:50%; top:75%;}
+      }
+
+
+      @keyframes example2 {
+        0%   {background-color:rgb(248, 108, 108); left:50%; bottom:0;}
+        100% { left:50%; bottom:10%;}
+      }
+    }
+
+
+    
+      
+
+  
+  }
+
+  .active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+
+  
+
+
+
+
+}

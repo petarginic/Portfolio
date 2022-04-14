@@ -1,0 +1,88 @@
+.about {
+
+  h1 {
+
+    margin-top: 40px;
+    padding: 30px;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .image-about {
+
+    img {
+
+      margin-top: 80px;
+      padding: 30px;
+      width: 300px;
+    }
+    }
+
+
+    .sports {
+
+      .grid-container {
+
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+
+
+      #grid-component {
+
+          display: grid;
+          width: 400px;
+        
+          grid-template-areas: "header main" "header footer";
+          grid-template-columns: 200px 1fr;
+          grid-template-rows: 200px 200px;
+          row-gap: 1rem;
+          column-gap: 1rem;
+
+
+      }
+
+
+      #grid-component > main {
+
+        grid-area: main;
+        background-image: url("..//../assets/images/hobi2.jpg");
+        background-position: center;
+        background-size: cover;
+       
+      }
+
+
+      #grid-component > header {
+        
+        
+        grid-area: header;
+        background-image: url("..//../assets/images/hobi1.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+
+
+      #grid-component > footer {
+
+        grid-area: footer;
+        background-image: url("..//../assets/images/hobi3.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
+
+
+    
+     
+
+
+  
+
+
+
+
+}

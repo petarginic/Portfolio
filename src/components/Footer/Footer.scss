@@ -1,0 +1,45 @@
+@import "../../Styles/components/index";
+@import "../../Styles/style.scss";
+
+
+.footer {
+
+  height: 10vh;
+  background-color:$NavbarBackgroundColor;
+  background-image:$NavbarBackgroundImage;
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      
+
+
+
+
+    .footer-content {
+
+    
+      color:aliceblue;
+      
+      a {
+
+        color:white;
+      }
+
+
+      i {
+
+        font-size: 2rem;
+        padding: 10px;
+      }
+
+      p {
+
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+
+
+  
+
+}

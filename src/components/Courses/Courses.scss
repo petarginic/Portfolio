@@ -1,0 +1,86 @@
+@import "../../Styles/components/index";
+@import "../../Styles/style.scss";
+
+.courses {
+
+  height: 150vh;
+  margin-top: 100px;
+  background-color: $CarouselBackgroundColor;
+  background-image: $CarouselBackgroundImage;
+
+
+  h1 {
+
+    text-align: center;
+    padding:60px;
+  }
+
+ 
+
+
+  .before {
+
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .course-content {
+
+      width: 400px;
+      padding: 10px;
+    }
+    
+
+    img {
+
+      height: 300px;
+      border-radius: 50%;
+      width: 300px;
+      margin-bottom: 30px;
+      
+    }
+
+  }
+
+  
+
+  .after {
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .course-content {
+
+      width: 400px;
+      padding: 10px;
+    }
+
+    img {
+
+      height: 300px;
+      border-radius: 50%;
+      width: 300px;
+      margin-bottom: 30px;
+    }
+
+  }
+
+
+
+  
+
+
+
+
+
+  }
+
+
+
+
+
+

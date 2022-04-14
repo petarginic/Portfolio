@@ -1,0 +1,24 @@
+.myCard {
+  width: 400px;
+  border: 1px solid black;
+}
+.myCard img {
+  width: 100%;
+  height: 300px;
+}
+.myCard .cardFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myCard .cardFooter h3 {
+  padding: 10px;
+  text-align: center;
+}
+.myCard .cardFooter p {
+  margin-left: 20px;
+  padding: 5px;
+}
+.myCard .cardFooter button {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=Card.css.map */

@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+.slider .image {
+  border-radius: 15px;
+  height: 700px;
+}
+.slider .right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: black;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.slider .right-arrow:hover {
+  transform: scale(1.2);
+}
+.slider .left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: black;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.slider .left-arrow:hover {
+  transform: scale(1.2);
+}
+.slider .slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slider .slide img {
+  width: 85vw;
+}
+.slider .slide .carousel-content .text1 {
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  opacity: 0.5;
+  -webkit-animation-name: example1;
+          animation-name: example1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.slider .slide .carousel-content .text2 {
+  font-size: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation-name: example2;
+          animation-name: example2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+@-webkit-keyframes example1 {
+  0% {
+    color: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    left: 50%;
+    top: 0px;
+  }
+  100% {
+    color: #ff1c00;
+    left: 50%;
+    top: 75%;
+  }
+}
+@keyframes example1 {
+  0% {
+    color: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    left: 50%;
+    top: 0px;
+  }
+  100% {
+    color: #ff1c00;
+    left: 50%;
+    top: 75%;
+  }
+}
+@-webkit-keyframes example2 {
+  0% {
+    background-color: rgb(248, 108, 108);
+    left: 50%;
+    bottom: 0;
+  }
+  100% {
+    left: 50%;
+    bottom: 10%;
+  }
+}
+@keyframes example2 {
+  0% {
+    background-color: rgb(248, 108, 108);
+    left: 50%;
+    bottom: 0;
+  }
+  100% {
+    left: 50%;
+    bottom: 10%;
+  }
+}
+.slider .active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}/*# sourceMappingURL=Carousel.css.map */

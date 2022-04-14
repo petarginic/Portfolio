@@ -1,0 +1,112 @@
+@import "../../Styles/scss/index";
+@import "../../Styles/style.scss";
+
+.navbar {
+
+
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: $NavbarBackgroundColor;
+  background-image: $NavbarBackgroundImage;
+  
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .link {
+   
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    font-size: 23px;
+    &:hover {    
+      transform: scale(1.2);
+      text-decoration: underline;
+    }
+
+    a {
+      margin-left: 55px;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      &:hover {    
+        transform: scale(1.5);
+      }
+
+    }
+   
+  }
+}
+
+
+
+
+
+.pre-navbar {
+
+  position: relative;
+  background-color: black;
+  height: 50px;
+  color:white;
+  background-color: $NavbarBackgroundColor;
+  background-image: $NavbarBackgroundImage;
+
+
+
+  .navbar-item1 {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      padding: 10px;
+      font-weight: 600;
+    }
+
+  }
+
+
+  .navbar-item2 {
+
+    position: absolute;
+    right:160px;
+    top:10px;
+
+    i {
+
+      padding: 10px;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+  
+     
+  }
+}
+
+
+
+
+.logo-navbar {
+
+  height: 100px;
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $CarouselBackgroundColor;
+  background-image: $CarouselBackgroundImage;
+
+  img {
+
+    padding-top: 30px;
+    cursor: pointer;
+  
+  }
+}

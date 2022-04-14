@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mainContent {
+  height: 80vh;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+.mainContent h2 {
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.mainContent .container {
+  margin-top: 80px;
+}
+.mainContent .container .row .myCard {
+  cursor: pointer;
+}
+.mainContent .container .row .myCard p {
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.mainContent .container .row .myCard p:hover {
+  box-shadow: inset 358px 0 0 0 #54b3d6;
+  color: white;
+}/*# sourceMappingURL=MainContent.css.map */

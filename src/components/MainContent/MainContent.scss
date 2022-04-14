@@ -1,0 +1,50 @@
+@import "../../Styles/style.scss";
+@import "../../Styles/scss/index";
+
+.mainContent {
+
+  height: 80vh;
+  background-color:$CarouselBackgroundColor;
+  background-image:$CarouselBackgroundImage;
+  
+
+  h2 {
+
+    padding: 30px;
+    
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+
+  .container {
+
+    margin-top: 80px;
+
+    .row {
+
+      .myCard {
+        cursor: pointer;
+
+       p {
+
+        transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+
+        &:hover {
+          box-shadow: inset 358px 0 0 0 #54b3d6;
+          color: white;
+
+
+        }
+       }
+        
+      }
+
+
+    }
+  }
+ 
+  
+
+
+}
